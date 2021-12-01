@@ -12,6 +12,7 @@ const Search = (props) => {
              })
         setFoodsFromApp(foodsCopy)
     }
+    
     return (
         <div className="align-search">
             <div className="search" >

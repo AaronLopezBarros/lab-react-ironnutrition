@@ -17,16 +17,18 @@ function App() {
   return (
     <div className="App">
       <AddFoodForm foodsFromApp={foods} setFoodsFromApp={setFood}/>
-      <Search foodsFromApp={foods} setFoodsFromApp={setFood}/>
-      <Row>
-      {foods.map((food, index) => {
-        return(
-            <FoodBox food={food}
-            key={index + Date.now()}
-            />
-        )
-      })}
-      </Row>
+        <Search foodsFromApp={foods} setFoodsFromApp={setFood}/>
+          <Row>
+          {foods.map((food, index) => {
+            return(
+                <FoodBox food={food}
+                foodsFromApp={foods}
+                setFoodsFromApp = {setFood}
+                key={index + Date.now()}
+                />
+            )
+          })}
+          </Row>
     </div>
   );
 }

@@ -4,6 +4,8 @@ import { useState } from "react";
 
 import './App.css';
 
+import FoodBox from "./FoodBox";
+
 
 function App() {
 
@@ -13,10 +15,9 @@ function App() {
     <div className="App">
       {foods.map((food, index) => {
         return(
-          <div key={index + Date.now()}>
-            <p>{food.name}</p>
-            <img src={food.image} alt={food.name} width={150} />
-          </div>
+          <FoodBox food={food}
+            key={index + Date.now()}
+          />
         )
       })}
     </div>

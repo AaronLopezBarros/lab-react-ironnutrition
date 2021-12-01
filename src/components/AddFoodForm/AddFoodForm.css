@@ -1,0 +1,7 @@
+.add-food-form{
+    width: 400px;
+}
+.align-form{
+    display: flex;
+    justify-content: center;
+}

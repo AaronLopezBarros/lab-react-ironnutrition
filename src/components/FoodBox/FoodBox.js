@@ -1,11 +1,11 @@
-import { Card, Col, Divider, Button } from "antd";
+import { Card, Col, Button } from "antd";
+import "antd/dist/antd.css"
 
 const FoodBox = (props) => {
 
     const { food } = props
 
     return(
-        <div>
             <Col>
             <Card
               title={food.name}
@@ -20,9 +20,6 @@ const FoodBox = (props) => {
               <Button type="primary"> Delete </Button>
             </Card>
           </Col>
-        </div>
-          
-          
     )
 }
 

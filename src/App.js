@@ -21,7 +21,7 @@ function App() {
     {showForm &&
       <AddFoodForm foodsFromApp={foods} setFoodsFromApp={setFood}/>
         }
-      <button onClick={() => setShowForm(!showForm)}>{showForm ? 'Hide Form' : 'Show Form'}</button>
+      <button onClick={() => setShowForm(!showForm)}>{showForm ? 'Hide Form' : 'Add new Food'}</button>
         <Search foodsFromApp={foods} setFoodsFromApp={setFood}/>
           <Row>
           {foods.map((food, index) => {

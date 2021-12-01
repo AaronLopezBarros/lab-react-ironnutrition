@@ -6,12 +6,12 @@ const FoodBox = (props) => {
     const { food, setFoodsFromApp, foodsFromApp } = props
 
     const deleteFood = (foodName) => {
-      const filteredFoood = foodsFromApp.filter((food) => {
+      const filteredFood = foodsFromApp.filter((food) => {
       
         return foodName !== food.name
 
       })
-      setFoodsFromApp(filteredFoood)
+      setFoodsFromApp(filteredFood)
     }
 
     return(

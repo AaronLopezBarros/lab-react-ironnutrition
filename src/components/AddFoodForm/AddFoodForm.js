@@ -22,11 +22,10 @@ const AddFoodForm = (props) => {
 
         props.setFoodsFromApp(foodCopy)
        
-    }
-
+    } 
     return(
         <div className="align-form">
-            <div className="add-food-form">
+           <div className="add-food-form">
                 <h2>Create new food</h2>
 
                 <p>Name: </p>
@@ -43,7 +42,9 @@ const AddFoodForm = (props) => {
                 
 
                 <button onClick={ () => addNewFood() } >Create food</button>
+                
             </div>
+
         </div>
         
     )

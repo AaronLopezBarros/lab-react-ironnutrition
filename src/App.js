@@ -13,10 +13,15 @@ import Search from "./components/Search/Search";
 function App() {
 
   const [foods, setFood] = useState(Foods)
+  const [showForm, setShowForm ] = useState(true)
+  
 
   return (
     <div className="App">
+    {showForm &&
       <AddFoodForm foodsFromApp={foods} setFoodsFromApp={setFood}/>
+        }
+      <button onClick={() => setShowForm(!showForm)}>{showForm ? 'Hide Form' : 'Show Form'}</button>
         <Search foodsFromApp={foods} setFoodsFromApp={setFood}/>
           <Row>
           {foods.map((food, index) => {
